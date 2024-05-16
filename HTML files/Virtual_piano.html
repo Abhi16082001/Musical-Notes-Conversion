@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Island+Moments&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Island+Moments&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Island+Moments&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Island+Moments&family=Lobster&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="../CSS files/Style_vp.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Play with notes</title>
+  </head>
+  <body>
+    <div class=" mt-5 p-3 ">
+      <img class="image" src="../Media/R.png">
+      <h1>Play with Notes</h1>
+      <img class="image1" src="../Media/R.gif">
+      <div class="dropdown">
+        <!-- <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Notes conversion mode
+        </button> -->
+        <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Piano notes to Flute notes</a></li>
+          <li><a class="dropdown-item" href="#">Flute notes to Piano notes</a></li>
+          <li><a class="dropdown-item" href="#">None</a></li>
+        </ul> -->
+        <!-- <input class="btn btn-primary dropdown-toggle" type="dropdown" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> -->
+        
+        <select name="Mode" class="dropdown" id="s1" onChange="SelectRedirect();">
+          <option class="dropdown-item" value="Homepage">Home Page</option>
+          <option class="dropdown-item" value="Pianotoflute">Piano notes to Flute notes</option>
+          <option class="dropdown-item" value="interconversion">Flute notes conversion</option>
+          <option class="dropdown-item" value="notesplayer">Notes Player</option>
+          <option class="dropdown-item" value="virtualpiano" selected>Virtual Piano keyboard</option>
+        </select>
+        <br><br>
+        <hr>
+        <p>Virtual Piano: Play your favaourite songs</p>
+        <hr>
+    </div>
+    
+    <div class="btn-toolbar ml-5" role="toolbar"  aria-label="Toolbar with button groups">
+      <!-- <div class="btn-group mr-2" role="group" aria-label="First group"> -->
+        <button  class="N11"></button>
+        <button  class="btn" id="S-"  onclick="play(261);">Q</button>
+        <button  class="btn" id="R-"  onclick="play(293);">W</button>
+        <button  class="btn" id="G-"  onclick="play(329);">E</button>
+        <button  class="btn" id="m-"  onclick="play(349);">R</button>
+        <button  class="btn" id="P-"  onclick="play(392);">T</button>
+        <button  class="btn" id="D-"  onclick="play(440);">Y</button>
+        <button  class="btn" id="N-"  onclick="play(493);">U</button>
+        <button class ="btn" id="S"   onclick="play(523);">A</button>
+        <button class ="btn" id="R"   onclick="play(587);">S</button>
+        <button class ="btn" id="G"   onclick="play(659);">D</button>
+        <button class ="btn" id="m"   onclick="play(698);">F</button>
+        <button class ="btn" id="P"   onclick="play(784);">G</button>
+        <button class ="btn" id="D"   onclick="play(880);">H</button>
+        <button class ="btn" id="N"   onclick="play(987);">J</button>
+        <button  class="btn" id="S1"  onclick="play(1046);">Z</button>
+        <button  class="btn" id="R1"  onclick="play(1174);">X</button>
+        <button  class="btn" id="G1"  onclick="play(1318);">C</button>
+        <button  class="btn" id="m1"  onclick="play(1396);">V</button>
+        <button  class="btn" id="P1"  onclick="play(1568);">B</button>
+        <button  class="btn" id="D1"  onclick="play(1760);">N</button>
+        <button  class="btn" id="N1"  onclick="play(1975);">M</button>
+        <button  class="N111" ></button>
+        <button  class="jfb"></button>
+        <button  class="jfb2"></button>
+        <button  class="jfb3" ></button>
+      </div>
+      <button  class="sharpkey"  id="r-" onclick="play(277);" >1</button>
+      <button  class="sharpkey"  id="g-" onclick="play(311);" >2</button>
+      <button  class="sharpkey"  id="d-" onclick="play(415);" >4</button>
+      <button  class="sharpkey"  id="n-" onclick="play(466);" >5</button>
+      <button  class="sharpkey"  id="M-" onclick="play(370);" >3</button>
+      <button  class="sharpkey"  id="r"  onclick="play(554);" >6</button>
+      <button  class="sharpkey"  id="g"  onclick="play(622);" >7</button>
+      <button  class="sharpkey"  id="d"  onclick="play(830);" >9</button>
+      <button  class="sharpkey"  id="n"  onclick="play(932);" >0</button>
+      <button  class="sharpkey"  id="M"  onclick="play(740);" >8</button>
+      <button  class="sharpkey"  id="r1" onclick="play(1108);" >I</button>
+      <button  class="sharpkey"  id="g1" onclick="play(1244);" >O</button>
+      <button  class="sharpkey"  id="d1" onclick="play(1661);" >K</button>
+      <button  class="sharpkey"  id="n1" onclick="play(1864);" >L</button>
+      <button  class="sharpkey"  id="M1" onclick="play(1480);" >P</button>
+</div>
+<script src="../JS files/script_vp.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+        -->
+      
+    
+      </body>
+    </html>

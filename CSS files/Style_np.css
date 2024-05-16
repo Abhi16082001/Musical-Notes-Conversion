@@ -1,0 +1,114 @@
+h1{
+
+    color:rgb(17, 60, 215);
+    background-color: rgba(59, 197, 163, 0.671);
+    display:inline;
+    font-family: 'Lobster','Island Moments';
+    border:ridge 19px rgba(53, 53, 214, 0.701);
+    padding: 20px;
+    margin-left: 235px;
+    text-align: center;
+    text-shadow: 5px 5px 7px rgb(156, 203, 203) ;
+    border-radius: 5px;
+    
+   
+    animation: bouncing 2s ease 0s infinite alternate both;
+}
+@keyframes bouncing {
+    0%{
+        /* top:100px; */
+        box-shadow:0 50px 50px rgb(56, 147, 160);
+        background-color: rgba(20, 161, 208, 0.664);
+        border-radius: 50%;
+        color: crimson;
+        content: "Circle";
+    }
+    100%{
+        /* top:200px; */
+        box-shadow: 0 0 50px blue;
+    }
+    
+}
+body{
+    background-image:url('../Media/spiral3.png');
+    /* background-image: cross-fade(url('pxy.jpg'),50%); */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    }
+.dropdown{
+    text-align: center;
+    text-shadow: 5px 5px 7px rgb(156, 203, 203) ;
+    border-radius: 7px;
+    margin-top: 60px;
+    font-family: cursive; 
+
+    /* for select */
+    padding:10px ;
+    font-size:large ;
+    /* background-color: rgba(39, 205, 80, 0.715) ; */
+    color:blue ;
+    font-family: 'Comfortaa',cursive ;
+    margin-top: 25px;
+} 
+ button{
+    padding:10px !important;
+    font-size:large !important;
+    color:darkblue !important;
+    font-family: 'Comfortaa',cursive !important;
+    border-color: darkblue !important;
+    background-color: rgba(240, 248, 255, 0.715) !important;
+    border-radius: 10px !important;
+}
+button:hover{
+ background-color:aquamarine !important;
+ color:darkgreen !important;
+}
+
+select{
+    background-color: rgb(66, 232, 66);
+    border: solid 5px green;
+}
+textarea{
+    background-color: rgb(105, 163, 221);
+    border: solid 5px rgb(22, 31, 217);
+    border-radius: 15px;
+background-image: url("../Media/music.png");
+color:aqua;
+}
+p{
+    background-color: rgba(49, 164, 184, 0.742);
+    margin-left: 50px;
+    margin-right: 63px;
+    padding:15px;
+    color:rgb(117, 17, 183);
+    border-radius: 15px;
+    
+}
+
+
+.image{
+    width: 200px;
+    height: 200px;
+    display: inline !important;
+    animation: shaking 2s ease 0s infinite alternate both;
+}
+.image1{
+    width: 200px;
+    height: 200px;
+    display: inline !important;
+    margin-left: 200px;
+}
+@keyframes shaking {
+    0%{
+        /* width: 200px;
+    height: 200px; */
+    }
+    100%{
+        /* width: 210px;
+    height: 210px; */
+    transform: rotate3d(1, 2.0, 3.0, 10deg);
+    }
+
+    
+}
