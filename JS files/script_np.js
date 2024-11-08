@@ -203,10 +203,10 @@ function syncDelay(milliseconds){
     break;
     
     case "Homepage":  
-    window.location="Homepage.html";
+    window.location="../index.html";
     break;
     default:
         
-    window.location="Homepage.html"; 
+    window.location="../index.html"; 
     break;
     }}

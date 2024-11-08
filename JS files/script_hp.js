@@ -4,21 +4,21 @@ function SelectRedirect(sel){
     switch(sel)
     {
     case 1:  
-    window.location="Piano_to_flute.html";
+    window.location="HTML files/Piano_to_flute.html";
     break;
     
     case 2:  
        
-    window.location="interfluteconv.html";
+    window.location="HTML files/interfluteconv.html";
     break;
     
     case 3:  
-    window.location="NotesPlayer.html";
+    window.location="HTML files/NotesPlayer.html";
     break;
     case 4:  
-    window.location="Virtual_piano.html";
+    window.location="HTML files/Virtual_piano.html";
     break;
     default:   
-    window.location="Homepage.html"; 
+    window.location="../index.html"; 
     break;
     }}
